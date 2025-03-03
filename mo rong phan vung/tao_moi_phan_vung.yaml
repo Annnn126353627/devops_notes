@@ -1,0 +1,9 @@
+fdisk /dev/sdc
+
+mkdir /mnt/data
+
+sudo mount /dev/sdc2 /mnt/data
+
+sudo nano /etc/fstab
+
+Them cai nay vao cuoi file: /dev/sdc2    /mnt/data    ext4    defaults    0    2

@@ -1,0 +1,5 @@
+sau khi có file docker-compose.yaml thì chạy lệnh: 
+  docker-compose up -d
+
+lấy mật khẩu bằng lệnh: 
+  docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword

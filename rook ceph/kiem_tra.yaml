@@ -1,0 +1,20 @@
+Kiểm  tra trạng thái cluster:
+    kubectl get cephcluster -n rook-ceph
+
+Kiểm tra các pod rook ceph:
+    kubectl get pods -n rook-ceph
+
+Kiểm tra trạng thái daemon ceph:
+    kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph status
+
+kiểm tra các osd:
+    kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph osd status
+
+Kiểm tra dung lượng lưu trữ:
+    kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph df
+
+kiểm tra các pool:
+    kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- ceph osd pool ls detail
+
+Kiểm tra trạng thái block storage (RDB):
+    kubectl -n rook-ceph exec -it deploy/rook-ceph-tools -- rbd ls
