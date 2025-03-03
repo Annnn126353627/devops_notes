@@ -1,0 +1,6 @@
+Cài đặt bằng docker:  
+  Sử dụng docker-compose:
+  B1: Tạo file docker-compose.yaml
+  B2: Chạy docker-compose up -d
+  B3: Đăng nhập vào IP hoặc domain
+  B4: Chạy lệnh docker logs rancher-server 2>&1 | grep "Bootstrap Password:" để lấy mật khẩu đăng nhập
