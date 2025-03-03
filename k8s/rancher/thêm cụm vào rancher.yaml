@@ -1,0 +1,6 @@
+Thêm cụm k8s vào rancher:
+  B1: Tại giao diện Home, chọn Import Existing
+  B2: Tại phần Import any Kubernetes cluster --> chọn Generic
+  B3: Nhập tên cụm, mô tả và chọn Create
+  B4: Tại màn hình tiếp theo sẽ xuất hiện 1 loạt các tùy chọn để thêm cụm vào rancher
+  B5: Chọn dòng thứ 2 và chạy trên node master
